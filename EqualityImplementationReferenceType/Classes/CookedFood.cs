@@ -23,5 +23,23 @@ namespace EqualityImplementationReferenceType.Classes
         {
             return string.Format("{0} {1}", _cookingMethod, base.Name);
         }
+
+        public override bool Equals(object obj)
+        {
+            if (!base.Equals(obj))
+            {
+                return false;
+            }
+
+            CookedFood rhs = (CookedFood)obj;
+            return this._cookingMethod == rhs._cookingMethod;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode() ^ this._cookingMethod.GetHashCode();
+        }
+
+        //End of Class
     }
 }
