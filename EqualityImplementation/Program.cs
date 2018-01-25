@@ -12,7 +12,7 @@ namespace EqualityImplementation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Equality Implementation:\n");
+            Console.WriteLine("Equality Implementation for Value Type:\n");
 
             StructFood banana = new StructFood("banana", FoodType.Fruit);
             StructFood banana2 = new StructFood("banana", FoodType.Fruit);

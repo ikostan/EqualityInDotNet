@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityInDotNet", "Equalit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityOperator", "EqualityOperator\EqualityOperator.csproj", "{F90A428E-565A-4689-A8D7-059ACD0A7567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityImplementation", "EqualityImplementation\EqualityImplementation.csproj", "{BED58FB0-58DA-47C6-9365-416B0B849741}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityImplementationValueType", "EqualityImplementation\EqualityImplementationValueType.csproj", "{BED58FB0-58DA-47C6-9365-416B0B849741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityImplementationReferenceType", "EqualityImplementationReferenceType\EqualityImplementationReferenceType.csproj", "{A6619E14-7024-465C-9643-86BB1B836D37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{BED58FB0-58DA-47C6-9365-416B0B849741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BED58FB0-58DA-47C6-9365-416B0B849741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BED58FB0-58DA-47C6-9365-416B0B849741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6619E14-7024-465C-9643-86BB1B836D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6619E14-7024-465C-9643-86BB1B836D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6619E14-7024-465C-9643-86BB1B836D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6619E14-7024-465C-9643-86BB1B836D37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
