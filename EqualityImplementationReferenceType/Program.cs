@@ -11,6 +11,7 @@ namespace EqualityImplementationReferenceType
 {
     class Program
     {
+        //
         static void Main(string[] args)
         {
             Console.WriteLine("Equality Implementation for Reference Type:\n");
