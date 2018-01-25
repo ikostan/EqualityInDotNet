@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9894268D-19E6-4A1B-8B10-6AAA3AF2393A}</ProjectGuid>
+    <ProjectGuid>{BED58FB0-58DA-47C6-9365-416B0B849741}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EqualityInDotNet</RootNamespace>
-    <AssemblyName>EqualityInDotNet</AssemblyName>
+    <RootNamespace>EqualityImplementation</RootNamespace>
+    <AssemblyName>EqualityImplementation</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\StructFood.cs" />
     <Compile Include="Classes\Food.cs" />
+    <Compile Include="Classes\FoodType.cs" />
+    <Compile Include="Classes\StructFood.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

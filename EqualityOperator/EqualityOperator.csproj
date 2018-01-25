@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9894268D-19E6-4A1B-8B10-6AAA3AF2393A}</ProjectGuid>
+    <ProjectGuid>{F90A428E-565A-4689-A8D7-059ACD0A7567}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EqualityInDotNet</RootNamespace>
-    <AssemblyName>EqualityInDotNet</AssemblyName>
+    <RootNamespace>EqualityOperator</RootNamespace>
+    <AssemblyName>EqualityOperator</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\StructFood.cs" />
-    <Compile Include="Classes\Food.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
