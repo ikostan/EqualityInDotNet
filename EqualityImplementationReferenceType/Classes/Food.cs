@@ -22,7 +22,7 @@ namespace EqualityInDotNet.Classes
             this._foodType = FoodType;
         }
 
-        public override string ToString(){return _name;}
+        public override string ToString() { return _name; }
 
         public override bool Equals(object obj)
         {
@@ -48,6 +48,16 @@ namespace EqualityInDotNet.Classes
         public override int GetHashCode()
         {
             return this._name.GetHashCode() ^ this._foodType.GetHashCode();
+        }
+
+        public static bool operator ==(Food x, Food y)
+        {
+            return object.Equals(x,y);
+        }
+
+        public static bool operator !=(Food x, Food y)
+        {
+            return !object.Equals(x, y);
         }
 
         //End of Class
