@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EqualityImplementationReferenceType.Classes
 {
-    public class CookedFood : Food
+    public sealed class CookedFood : Food
     {
         private string _cookingMethod;
 
