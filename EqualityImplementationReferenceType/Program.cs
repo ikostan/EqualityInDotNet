@@ -16,10 +16,18 @@ namespace EqualityImplementationReferenceType
             Console.WriteLine("Equality Implementation for Reference Type:\n");
 
             Food apple = new Food("apple", FoodType.Fruit);
-            Console.WriteLine(apple);
-
+            //Console.WriteLine(apple);
             CookedFood stewedApple = new CookedFood("stewed", "apple", FoodType.Fruit);
-            Console.WriteLine(stewedApple);
+            //Console.WriteLine(stewedApple);
+            CookedFood bakedApple = new CookedFood("baked", "apple", FoodType.Fruit);
+            CookedFood stewedApple2 = new CookedFood("stewed", "apple", FoodType.Fruit);
+            Food apple2 = new Food("apple", FoodType.Fruit);
+
+            DisplayWhetherEqual(apple, stewedApple);
+            DisplayWhetherEqual(stewedApple, bakedApple);
+            DisplayWhetherEqual(stewedApple, stewedApple2);
+            DisplayWhetherEqual(apple, apple2);
+            DisplayWhetherEqual(apple, apple);
 
             Console.WriteLine("\nPlease enter any key to exit...");
             Console.ReadKey();
