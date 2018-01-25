@@ -10,6 +10,11 @@ namespace EqualityImplementationReferenceType
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Equality Implementation for Reference Type:\n");
+
+
+            Console.WriteLine("\nPlease enter any key to exit...");
+            Console.ReadKey();
         }
     }
 }
