@@ -53,11 +53,13 @@ namespace EqualityInDotNet.Classes
         public static bool operator ==(Food x, Food y)
         {
             return object.Equals(x,y);
+            //return x.Name == y.Name && x.FoodType == y.FoodType; //Wrong implementation
         }
 
         public static bool operator !=(Food x, Food y)
         {
             return !object.Equals(x, y);
+            //return !(x.Name == y.Name && x.FoodType == y.FoodType); //Wrong implementation
         }
 
         //End of Class
