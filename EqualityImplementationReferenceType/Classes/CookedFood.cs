@@ -12,18 +12,34 @@ namespace EqualityImplementationReferenceType.Classes
     {
         private string _cookingMethod;
 
+        //
         public CookedFood(string cookingMethod, string name, FoodType type) : base(name, type)
         {
             this._cookingMethod = cookingMethod;
         }
 
+        //
+        public static bool operator ==(CookedFood a, CookedFood b)
+        {
+            return a.Equals(b);
+        }
+
+        //
+        public static bool operator !=(CookedFood a, CookedFood b)
+        {
+            return !a.Equals(b);
+        }
+
+        //
         public string CookingMethod { get { return _cookingMethod; } }
 
+        //
         public override string ToString()
         {
             return string.Format("{0} {1}", _cookingMethod, base.Name);
         }
 
+        //
         public override bool Equals(object obj)
         {
             if (!base.Equals(obj))
@@ -35,6 +51,7 @@ namespace EqualityImplementationReferenceType.Classes
             return this._cookingMethod == rhs._cookingMethod;
         }
 
+        //
         public override int GetHashCode()
         {
             return base.GetHashCode() ^ this._cookingMethod.GetHashCode();
