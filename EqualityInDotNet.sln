@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityImplementationValue
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityImplementationReferenceType", "EqualityImplementationReferenceType\EqualityImplementationReferenceType.csproj", "{A6619E14-7024-465C-9643-86BB1B836D37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparisonInDotNet", "ComparisonInDotNet\ComparisonInDotNet.csproj", "{777AF7F7-B88D-47DE-A4CA-52605C3CD0FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A6619E14-7024-465C-9643-86BB1B836D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6619E14-7024-465C-9643-86BB1B836D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6619E14-7024-465C-9643-86BB1B836D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{777AF7F7-B88D-47DE-A4CA-52605C3CD0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{777AF7F7-B88D-47DE-A4CA-52605C3CD0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{777AF7F7-B88D-47DE-A4CA-52605C3CD0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{777AF7F7-B88D-47DE-A4CA-52605C3CD0FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
