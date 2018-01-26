@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EqualityImplementationReferenceType.Classes
 {
-    public sealed class CookedFood : Food
+    public sealed class CookedFood : Food, IEquatable<CookedFood>
     {
         private string _cookingMethod;
 
@@ -55,6 +55,17 @@ namespace EqualityImplementationReferenceType.Classes
         public override int GetHashCode()
         {
             return base.GetHashCode() ^ this._cookingMethod.GetHashCode();
+        }
+
+        // IEquatable<CookedFood>
+        public bool Equals(CookedFood other)
+        {
+            if (!base.Equals(other))
+            {
+                return false;
+            }
+
+            return this._cookingMethod == other._cookingMethod;
         }
 
         //End of Class
