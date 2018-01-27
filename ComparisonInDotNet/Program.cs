@@ -15,9 +15,21 @@ namespace ComparisonInDotNet
             string apple = "apple";
             string pear = "pear";
 
-            Console.WriteLine($"apple vs pear: {apple.CompareTo(pear)}");
-            Console.WriteLine($"pear vs apple: {pear.CompareTo(apple) }");
-            Console.WriteLine($"apple vs apple: {apple.CompareTo(apple) }");
+            Console.WriteLine($"apple vs pear: { apple.CompareTo(pear) }");
+            Console.WriteLine($"pear vs apple: { pear.CompareTo(apple) }");
+            Console.WriteLine($"apple vs apple: { apple.CompareTo(apple) }");
+
+            Console.WriteLine();
+
+            DisplayOrder<string>(apple, pear);
+            DisplayOrder<string>(pear, apple);
+            DisplayOrder<string>(apple, apple);
+
+            Console.WriteLine();
+
+            DisplayOrder<int>(3, 4);
+            DisplayOrder<int>(4, 3);
+            DisplayOrder<int>(3, 3);
 
             Console.WriteLine("\nPlease enter any key to exit...");
             Console.ReadKey();
@@ -40,5 +52,7 @@ namespace ComparisonInDotNet
                 Console.WriteLine($"{a} < {b}");
             }
         }
+
+        //End of Class
     }
 }
