@@ -13,6 +13,7 @@ namespace EqualityAndComparisonForStrings
         {
             Console.WriteLine("Equality And Comparison For Strings:\n");
 
+            //
             string str1 = "apple";
             string str2 = "PINEAPPLE";
             string str3 = "Apple";
@@ -30,7 +31,6 @@ namespace EqualityAndComparisonForStrings
             DisplayAllComparisons(str1, str3);
             DisplayAllComparisons(str4, str5);
             DisplayAllComparisons(str6, str7);
-
 
             Console.WriteLine("\nPlease enter any key to exit...");
             Console.ReadKey();
