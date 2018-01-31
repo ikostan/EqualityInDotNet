@@ -6,9 +6,23 @@ using System.Threading.Tasks;
 
 namespace CompapersAndEqualityComparers.Classes
 {
-    class FoodNameComparer : IComparer<Food>
+    class FoodNameComparer : Comparer<Food>
     {
-        public int Compare(Food x, Food y)
+        private static FoodNameComparer _foodNameComparer;
+
+        private FoodNameComparer() { }
+
+        public static FoodNameComparer Instanse()
+        {
+            if (_foodNameComparer == null)
+            {
+                _foodNameComparer = new FoodNameComparer();
+            }
+
+            return _foodNameComparer;
+        }
+
+        public override int Compare(Food x, Food y)
         {
             if (x != null && y != null)
             {

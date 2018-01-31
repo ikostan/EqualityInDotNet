@@ -33,14 +33,15 @@ namespace CompapersAndEqualityComparers
         //
         private static void FoodInstancesComparison()
         {
-            Food[] list = {
+            Food[] list = 
+            {
                 new Food("orange", FoodType.Fruit),
                 new Food("banana", FoodType.Fruit),
                 new Food("pear", FoodType.Fruit),
                 new Food("apple", FoodType.Fruit),
             };
 
-            Array.Sort(list, new FoodNameComparer());
+            Array.Sort(list, FoodNameComparer.Instanse());
 
             foreach (var item in list)
             {
