@@ -15,8 +15,11 @@ namespace EqualityAndComparisonForStrings
 
             string str1 = "apple";
             string str2 = "PINEAPPLE";
+            string str3 = "Apple";
+
             //DisplayComparison(str1, str2, StringComparison.CurrentCultureIgnoreCase);
             DisplayAllComparisons(str1, str2);
+            DisplayAllComparisons(str1, str3);
 
             Console.WriteLine("\nPlease enter any key to exit...");
             Console.ReadKey();
@@ -25,7 +28,7 @@ namespace EqualityAndComparisonForStrings
         //
         static void DisplayAllComparisons(string str1, string str2)
         {
-            Console.WriteLine("Current culture is: " + Thread.CurrentThread.CurrentUICulture);
+            Console.WriteLine("\nCurrent culture is: " + Thread.CurrentThread.CurrentUICulture);
             Console.WriteLine();
             DisplayComparison(str1, str2, StringComparison.Ordinal);
             DisplayComparison(str1, str2, StringComparison.OrdinalIgnoreCase);
