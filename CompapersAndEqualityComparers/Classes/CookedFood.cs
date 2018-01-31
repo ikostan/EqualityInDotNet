@@ -34,7 +34,7 @@ namespace CompapersAndEqualityComparers.Classes
         //
         public override string ToString()
         {
-            return string.Format("{0} {1}", _cookingMethod, base.Name);
+            return string.Format("{0} {1} ({2})", _cookingMethod, base.Name, this.FoodType);
         }
 
         //
