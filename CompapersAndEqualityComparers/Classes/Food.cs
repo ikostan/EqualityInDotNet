@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EqualityInDotNet.Classes
 {
-    public class Food
+    public class Food : IComparable<Food>
     {
         private string _name;
         private FoodType _foodType;
@@ -48,6 +48,12 @@ namespace EqualityInDotNet.Classes
         public override int GetHashCode()
         {
             return this._name.GetHashCode() ^ this._foodType.GetHashCode();
+        }
+
+        //
+        public int CompareTo(Food other)
+        {
+            throw new NotImplementedException();
         }
 
         public static bool operator ==(Food x, Food y)
