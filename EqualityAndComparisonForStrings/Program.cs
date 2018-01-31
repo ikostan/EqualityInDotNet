@@ -17,9 +17,20 @@ namespace EqualityAndComparisonForStrings
             string str2 = "PINEAPPLE";
             string str3 = "Apple";
 
+            //
+            string str4 = "Stra\u00dfe";
+            string str5 = "Strasse";
+
+            //
+            string str6 = "erkl\u00e4ren";
+            string str7 = "erkla\u0308ren";
+
             //DisplayComparison(str1, str2, StringComparison.CurrentCultureIgnoreCase);
             DisplayAllComparisons(str1, str2);
             DisplayAllComparisons(str1, str3);
+            DisplayAllComparisons(str4, str5);
+            DisplayAllComparisons(str6, str7);
+
 
             Console.WriteLine("\nPlease enter any key to exit...");
             Console.ReadKey();
