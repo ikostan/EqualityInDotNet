@@ -12,6 +12,14 @@ namespace CompapersAndEqualityComparers
         {
             Console.WriteLine("Compapers and Equality Comparers:\n");
 
+            
+
+            Console.WriteLine("\nPlease enter any key to exit...");
+            Console.ReadKey();
+        }
+
+        private static void SampleBasicStringComparison()
+        {
             string[] list = {
                 "orange",
                 "banana",
@@ -25,9 +33,8 @@ namespace CompapersAndEqualityComparers
             {
                 Console.WriteLine(item);
             }
-
-            Console.WriteLine("\nPlease enter any key to exit...");
-            Console.ReadKey();
         }
+
+        //End of Class
     }
 }
