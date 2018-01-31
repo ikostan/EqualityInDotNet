@@ -12,7 +12,9 @@ namespace EqualityAndComparisonForStrings
         {
             Console.WriteLine("Equality And Comparison For Strings:\n");
 
-            
+            string str1 = "apple";
+            string str2 = "PINEAPPLE";
+            DisplayComparison(str1, str2, StringComparison.CurrentCultureIgnoreCase);
 
             Console.WriteLine("\nPlease enter any key to exit...");
             Console.ReadKey();
@@ -33,7 +35,7 @@ namespace EqualityAndComparisonForStrings
             {
                 return "==";
             }
-            else if ()
+            else if (result < 0)
             {
                 return " < ";
             }
