@@ -12,7 +12,19 @@ namespace CompapersAndEqualityComparers
         {
             Console.WriteLine("Compapers and Equality Comparers:\n");
 
-           
+            string[] list = {
+                "orange",
+                "banana",
+                "pear",
+                "apple"
+            };
+
+            Array.Sort(list);
+
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.WriteLine("\nPlease enter any key to exit...");
             Console.ReadKey();
