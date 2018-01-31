@@ -29,7 +29,22 @@ namespace CompapersAndEqualityComparers.Classes
         {
             if (x != null && y != null)
             {
-                return string.Compare(x.Name, y.Name, StringComparison.CurrentCulture);
+                int result = string.Compare(
+                    x.Name, 
+                    y.Name, 
+                    StringComparison.CurrentCulture);
+
+                if (result != 0)
+                {
+                    return result;
+                }
+                else
+                {
+                    return string.Compare(
+                        x.FoodType.ToString(), 
+                        y.FoodType.ToString(), 
+                        StringComparison.CurrentCulture);
+                }
             }
             else
             {

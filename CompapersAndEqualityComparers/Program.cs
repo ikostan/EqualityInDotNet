@@ -35,13 +35,27 @@ namespace CompapersAndEqualityComparers
         {
             Food[] list =
             {
+                new Food("apple", FoodType.Fruit),
                 new Food("orange", FoodType.Fruit),
                 new Food("banana", FoodType.Fruit),
-                new Food("pear", FoodType.Fruit),
                 new CookedFood("baked", "apple", FoodType.Fruit),
+                new Food("pear", FoodType.Fruit)
             };
 
             SortAndShowList(list);
+
+            Console.WriteLine();
+
+            Food[] list2 =
+            {
+                new CookedFood("baked", "apple", FoodType.Fruit),
+                new Food("orange", FoodType.Fruit),
+                new Food("apple", FoodType.Fruit),
+                new Food("banana", FoodType.Fruit),
+                new Food("pear", FoodType.Fruit)
+            };
+
+            SortAndShowList(list2);
         }
 
         static void SortAndShowList(Food[] list)
