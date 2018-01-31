@@ -1,12 +1,10 @@
-﻿using EqualityImplementation.Classes;
-using EqualityInDotNet.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EqualityImplementationReferenceType.Classes
+namespace CompapersAndEqualityComparers.Classes
 {
     public sealed class CookedFood : Food, IEquatable<CookedFood>
     {

@@ -1,13 +1,12 @@
-﻿using EqualityImplementation.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EqualityInDotNet.Classes
+namespace CompapersAndEqualityComparers.Classes
 {
-    public class Food : IComparable<Food>
+    public class Food
     {
         private string _name;
         private FoodType _foodType;
@@ -19,10 +18,14 @@ namespace EqualityInDotNet.Classes
         public Food(string name, FoodType foodType)
         {
             this._name = name;
-            this._foodType = FoodType;
+            this._foodType = foodType;
+            System.Diagnostics.Debug.WriteLine($"_name: {_name}, _foodType: {_foodType}");
         }
 
-        public override string ToString() { return $"{_name} ({_foodType})"; }
+        public override string ToString()
+        {
+            return $"{_name} ({_foodType})";
+        }
 
         public override bool Equals(object obj)
         {
@@ -48,12 +51,6 @@ namespace EqualityInDotNet.Classes
         public override int GetHashCode()
         {
             return this._name.GetHashCode() ^ this._foodType.GetHashCode();
-        }
-
-        //
-        public int CompareTo(Food other)
-        {
-            throw new NotImplementedException();
         }
 
         public static bool operator ==(Food x, Food y)

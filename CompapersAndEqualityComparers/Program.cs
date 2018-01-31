@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EqualityImplementation.Classes;
-using EqualityInDotNet.Classes;
+using CompapersAndEqualityComparers.Classes;
+
 
 namespace CompapersAndEqualityComparers
 {
@@ -14,24 +14,33 @@ namespace CompapersAndEqualityComparers
         {
             Console.WriteLine("Compapers and Equality Comparers:\n");
 
-            SampleBasicStringComparison();
-            FoodInstancesComparison();
+            try
+            {
+                //SampleBasicStringComparison();
+                FoodInstancesComparison();
+            }
+            catch (Exception c)
+            {
+                Console.WriteLine(c.Message);
+                Console.WriteLine(c.StackTrace);
+            }
 
 
             Console.WriteLine("\nPlease enter any key to exit...");
             Console.ReadKey();
         }
 
+        //
         private static void FoodInstancesComparison()
         {
             Food[] list = {
-                new Food("apple", FoodType.Fruit),
+                new Food("orange", FoodType.Fruit),
                 new Food("banana", FoodType.Fruit),
                 new Food("pear", FoodType.Fruit),
                 new Food("apple", FoodType.Fruit),
             };
 
-            Array.Sort(list);
+            Array.Sort(list, new FoodNameComparer());
 
             foreach (var item in list)
             {
@@ -39,6 +48,7 @@ namespace CompapersAndEqualityComparers
             }
         }
 
+        //
         private static void SampleBasicStringComparison()
         {
             string[] list = {
