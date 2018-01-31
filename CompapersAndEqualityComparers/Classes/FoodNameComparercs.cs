@@ -10,8 +10,10 @@ namespace CompapersAndEqualityComparers.Classes
     {
         private static FoodNameComparer _foodNameComparer;
 
+        //
         private FoodNameComparer() { }
 
+        //
         public static FoodNameComparer Instanse()
         {
             if (_foodNameComparer == null)
@@ -22,6 +24,7 @@ namespace CompapersAndEqualityComparers.Classes
             return _foodNameComparer;
         }
 
+        //
         public override int Compare(Food x, Food y)
         {
             if (x != null && y != null)

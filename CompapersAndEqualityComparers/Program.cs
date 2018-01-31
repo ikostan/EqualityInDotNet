@@ -17,7 +17,8 @@ namespace CompapersAndEqualityComparers
             try
             {
                 //SampleBasicStringComparison();
-                FoodInstancesComparison();
+                //FoodInstancesComparison();
+                CookedFoodInstancesComparison();
             }
             catch (Exception c)
             {
@@ -25,15 +26,38 @@ namespace CompapersAndEqualityComparers
                 Console.WriteLine(c.StackTrace);
             }
 
-
             Console.WriteLine("\nPlease enter any key to exit...");
             Console.ReadKey();
+        }
+
+        //        private static void FoodInstancesComparison()
+        private static void CookedFoodInstancesComparison()
+        {
+            Food[] list =
+            {
+                new Food("orange", FoodType.Fruit),
+                new Food("banana", FoodType.Fruit),
+                new Food("pear", FoodType.Fruit),
+                new CookedFood("baked", "apple", FoodType.Fruit),
+            };
+
+            SortAndShowList(list);
+        }
+
+        static void SortAndShowList(Food[] list)
+        {
+            Array.Sort(list, FoodNameComparer.Instanse());
+
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         //
         private static void FoodInstancesComparison()
         {
-            Food[] list = 
+            Food[] list =
             {
                 new Food("orange", FoodType.Fruit),
                 new Food("banana", FoodType.Fruit),
