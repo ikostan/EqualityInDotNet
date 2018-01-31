@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,10 +15,26 @@ namespace EqualityAndComparisonForStrings
 
             string str1 = "apple";
             string str2 = "PINEAPPLE";
-            DisplayComparison(str1, str2, StringComparison.CurrentCultureIgnoreCase);
+            //DisplayComparison(str1, str2, StringComparison.CurrentCultureIgnoreCase);
+            DisplayAllComparisons(str1, str2);
 
             Console.WriteLine("\nPlease enter any key to exit...");
             Console.ReadKey();
+        }
+
+        //
+        static void DisplayAllComparisons(string str1, string str2)
+        {
+            Console.WriteLine("Current culture is: " + Thread.CurrentThread.CurrentUICulture);
+            Console.WriteLine();
+            DisplayComparison(str1, str2, StringComparison.Ordinal);
+            DisplayComparison(str1, str2, StringComparison.OrdinalIgnoreCase);
+            Console.WriteLine();
+            DisplayComparison(str1, str2, StringComparison.InvariantCulture);
+            DisplayComparison(str1, str2, StringComparison.InvariantCultureIgnoreCase);
+            Console.WriteLine();
+            DisplayComparison(str1, str2, StringComparison.CurrentCulture);
+            DisplayComparison(str1, str2, StringComparison.CurrentCultureIgnoreCase);
         }
 
         //
