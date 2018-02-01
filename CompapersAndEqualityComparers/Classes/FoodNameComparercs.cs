@@ -11,7 +11,7 @@ namespace CompapersAndEqualityComparers.Classes
         private static FoodNameComparer _foodNameComparer;
 
         //
-        private FoodNameComparer() { }
+        private FoodNameComparer(){}
 
         //
         public static FoodNameComparer Instanse()

@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\CookedFood.cs" />
+    <Compile Include="Classes\FoodItem.cs" />
     <Compile Include="Classes\Food.cs" />
     <Compile Include="Classes\FoodNameComparercs.cs" />
     <Compile Include="Classes\FoodType.cs" />
