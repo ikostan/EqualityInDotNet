@@ -38,6 +38,7 @@ namespace CompapersAndEqualityComparers
 
             list.Add(new FoodItem("banana", FoodType.Fruit));
             list.Add(new FoodItem("orange", FoodType.Fruit));
+            list.Add(new FoodItem("Apple", FoodType.Fruit));
             list.Add(new FoodItem("apple", FoodType.Fruit));
             list.Add(new FoodItem("banana", FoodType.Fruit));
             list.Add(new FoodItem("pear", FoodType.Fruit));
