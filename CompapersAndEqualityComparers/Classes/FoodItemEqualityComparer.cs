@@ -8,6 +8,23 @@ namespace CompapersAndEqualityComparers.Classes
 {
     class FoodItemEqualityComparer : IEqualityComparer<FoodItem>
     {
+        private static FoodItemEqualityComparer foodItemEqualityComparer;
+
+        //
+        private FoodItemEqualityComparer(){}
+
+        //
+        public static FoodItemEqualityComparer Instance()
+        {
+            if (foodItemEqualityComparer == null)
+            {
+                foodItemEqualityComparer = new FoodItemEqualityComparer();
+            }
+
+            return foodItemEqualityComparer;
+        }
+
+        //
         public bool Equals(FoodItem x, FoodItem y)
         {
             return (

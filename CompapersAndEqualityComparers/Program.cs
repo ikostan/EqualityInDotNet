@@ -34,9 +34,10 @@ namespace CompapersAndEqualityComparers
         //
         private static void SampleEqualityComparer()
         {
-            var list = new HashSet<FoodItem>();
+            var list = new HashSet<FoodItem>(FoodItemEqualityComparer.Instance());
 
             list.Add(new FoodItem("banana", FoodType.Fruit));
+            list.Add(new FoodItem("baNanA", FoodType.Fruit));
             list.Add(new FoodItem("orange", FoodType.Fruit));
             list.Add(new FoodItem("Apple", FoodType.Fruit));
             list.Add(new FoodItem("apple", FoodType.Fruit));
@@ -44,6 +45,22 @@ namespace CompapersAndEqualityComparers
             list.Add(new FoodItem("pear", FoodType.Fruit));
 
             foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine();
+            var list2 = new HashSet<FoodItem>(EqualityComparer<FoodItem>.Default);
+
+            list2.Add(new FoodItem("banana", FoodType.Fruit));
+            list2.Add(new FoodItem("baNanA", FoodType.Fruit));
+            list2.Add(new FoodItem("orange", FoodType.Fruit));
+            list2.Add(new FoodItem("Apple", FoodType.Fruit));
+            list2.Add(new FoodItem("apple", FoodType.Fruit));
+            list2.Add(new FoodItem("banana", FoodType.Fruit));
+            list2.Add(new FoodItem("pear", FoodType.Fruit));
+
+            foreach (var item in list2)
             {
                 Console.WriteLine(item);
             }
