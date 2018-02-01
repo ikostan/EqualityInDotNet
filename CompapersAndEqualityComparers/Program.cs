@@ -66,7 +66,7 @@ namespace CompapersAndEqualityComparers
             }
         }
 
-        //        private static void FoodInstancesComparison()
+        //private static void FoodInstancesComparison()
         private static void CookedFoodInstancesComparison()
         {
             Food[] list =
